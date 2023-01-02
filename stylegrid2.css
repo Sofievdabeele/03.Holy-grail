@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    background-color: rgb(164, 180, 164);
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+header{
+    padding: 50px;
+    text-align: center;
+    color: rgb(228, 232, 152);
+    text-decoration-line: underline;
+    border-style: outset;
+    border-color: black;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+nav{
+    background-color: rgb(82, 100, 81);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 50px;
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    text-align: center;
+}
+nav a{
+    color: white;
+}
+nav a:hover{
+    background-color: aqua;
+    color: black;
+}
+
+main{
+    padding: 50px;
+    text-align: justify;
+    grid-column: 2/ span 1;
+    grid-row: 2;
+    
+   
+
+}
+aside{
+    padding: 20px;
+    line-height: 50px;
+    background-color: rgb(82, 100, 81);
+    grid-column: 3/ span 3;
+    grid-row: 2;
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    color: rgb(66, 66, 65);
+    text-decoration-line: underline;
+    border-style: outset;
+    border-color: black;
+    grid-column-start:1;
+    grid-column-end: 4;
+}
+
+@media only screen and (max-width: 480px) {
+  nav{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    flex-direction: row;
+  }
+  main{
+    grid-column: 1/ span 3;
+    grid-row: 3;
+  }
+  aside{
+    grid-column: 1 / span 3;
+    grid-row: 4;
+  }
+  
+}
